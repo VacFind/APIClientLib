@@ -1,0 +1,9 @@
+{
+  "name": "vacfind-api",
+  "version": "1.0.0",
+  "description": "A library that abstracts away the process of interfacing with the VacFind Vaccine Availability API",
+  "main": "index.js",
+  "repository": "https://github.com/VacFind/APIClientLib",
+  "author": "Adrian Edwards",
+  "license": "MIT"
+}
