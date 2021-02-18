@@ -8,5 +8,8 @@
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/vacfind"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
