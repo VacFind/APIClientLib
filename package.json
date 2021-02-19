@@ -9,5 +9,8 @@
     "type": "opencollective",
     "url": "https://opencollective.com/vacfind"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "asyncairtable": "^2.1.0"
+  }
 }
