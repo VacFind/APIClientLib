@@ -6,7 +6,7 @@ essentially the goal is to create a national client library to provide combined 
 - Data collected from phonecall based operations
 - data crowdsourced from people who have gotten vaccines
 - [GISCorps mapping data including vaccination sites](https://covid-19-giscorps.hub.arcgis.com/)
-
+- [covid19api](https://covid19api.com/) (seems to be mostly dashboard type data, lower priority)
 
 This library would intelligently handle calling whichever API is required to process the request and switching between them so all clients have to do is request data and it handles the behind the scenes of that process
 
