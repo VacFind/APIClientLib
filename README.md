@@ -1,4 +1,4 @@
-# VacFind API Client
+# COVID API Client
 
 This is an NPM package designed to make it easier to integrate data from VacFind into your project so you can easily access up-to-date vaccine availability data.
 
