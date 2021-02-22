@@ -1,23 +1,11 @@
 {
-	"version": "2.5.0",
 	"compilerOptions": {
-		"allowSyntheticDefaultImports": true,
-		"declaration": false,
-		"diagnostics": true,
-		"target": "ES5",
-		"downlevelIteration": true,
-		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitReturns": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"removeComments": true,
-		"noLib": false,
-		"moduleResolution": "node",
-		"sourceMap": true,
-		"typeRoots": [
-			"/.node_modules/@types"
-		]
+		"target": "ES2015",
+		"module": "commonjs",
+		"declaration": true,
+		"outDir": "build",
+		"strict": true,
+		"removeComments": true
 	},
 	"include": [
 		"src/**/*"
