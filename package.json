@@ -24,6 +24,7 @@
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "release": "gulp compile"
   }
 }
