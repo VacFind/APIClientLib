@@ -1,5 +1,5 @@
 {
-  "name": "vacfind-api",
+  "name": "covidjs",
   "version": "1.0.0",
   "description": "A library that abstracts away the process of interfacing with the VacFind Vaccine Availability API",
   "main": "src/index.ts",

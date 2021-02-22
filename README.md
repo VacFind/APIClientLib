@@ -1,6 +1,6 @@
-# COVID API Client
+# CovidJS
 
-This is an NPM package designed to make it easier to integrate data from VacFind into your project so you can easily access up-to-date vaccine availability data.
+This is an NPM package designed to make it easier to integrate data from various COVID-related API's into your project so you can easily access up-to-date vaccine availability data.
 
 The purpose of this library is to make it easier for us to manage possibly breaking changes that may be made to the API as it grows. This allows us to maintain the client implementation and push this to projects as a package update without requiring developers to soend too much time reading about what changed and why before updating their apps.  
 
