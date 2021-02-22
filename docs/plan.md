@@ -17,9 +17,14 @@ This library would intelligently handle calling whichever API is required to pro
 
 # Structure
 
-This repo plans to take a modular approach by creating interface definitions for "backends", which represent various api's (i.e. each thing listed in the goals section will likely become one or more backends). each backend should have a function check whether a  URL will work on it so the main file can determine which datasource to pick
+This repo plans to take a modular approach:
 
-"adapters" are code that adapts different API schemas into one standard common format to interface with the user. datasources pass data through adapters before returning the results of a function call
+"backends" represent various api's (i.e. each thing listed in the goals section will likely become one or more backends). each backend should be able to:
+- check whether a  URL will work on it
+- report what kinds of information it can provide (vaccine, testing counts, case count, vaccination sites, site availabilities, etc )
+- interface with the API or backend that it is for
+
+"adapters" are code that adapts different API schemas into one standard common format to interface with the user. These should be two-way adapters so requests can be translated to something that the backend understands (if it doesnt use the standard scraper format (TBD, add link to one here when it exists)) for both requests and responses. datasources pass data through adapters before returning the results of a function call to the client
 
 the main file should be responsible for providing a standard interface of functions to the client and determining which backends to use
 
