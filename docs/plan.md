@@ -12,6 +12,17 @@ essentially the goal is to create a national client library to provide combined 
 This library would intelligently handle calling whichever API is required to process the request and switching between them so all clients have to do is request data and it handles the behind the scenes of that process
 
 
+
+
+
+# Structure
+
+This repo plans to take a modular approach by creating interface definitions for "backends", which represent various api's (i.e. each thing listed in the goals section will likely become one or more backends). each backend should have a function check whether a  URL will work on it so the main file can determine which datasource to pick
+
+"adapters" are code that adapts different API schemas into one standard common format to interface with the user. datasources pass data through adapters before returning the results of a function call
+
+the main file should be responsible for providing a standard interface of functions to the client and determining which backends to use
+
 # TODO's
 - [ ] create a spec for an API request format that allows requests to be sotred into their respective sources (or sent out to multiple API's)
-- [ ] 
+
