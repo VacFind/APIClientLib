@@ -26,7 +26,8 @@
   "scripts": {
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
-    "build": "webpack",
+    "build": "webpack --mode development",
+    "release": "webpack --mode production",
     "test": "jest"
   }
 }
