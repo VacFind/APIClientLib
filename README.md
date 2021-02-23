@@ -12,5 +12,11 @@ TBD - not yet published as an NPM package. File an issue if this is incorrect
 
 ## Usage
 
-TBD - Not yet implemented. File an issue if this is incorrect
+```
+<script src="./path/to/covidjs.bundle.js" ></script>
+
+<script>
+	covidjs.helloWorld()
+</script>
+```
 
