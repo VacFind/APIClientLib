@@ -1,4 +1,10 @@
-# The Goal
+# CovidJS Documentation
+This is an NPM package designed to make it easier to integrate data from various COVID-related API's into your project so you can easily access up-to-date vaccine availability data.
+
+The purpose of this library is to make it easier for developers to access multiple COVID-related API's and allow the maintainers of those API's to have some control over client implementations. This provides the API developers with the ability to help move projects over to a new versions of their API should they need to make a breaking change. This also helps developers more easily access data from multiple API's and update their implementations just by updating a dependency.  
+
+
+## Goal
 
 essentially the goal is to create a national client library to provide combined access to data form sources such as:
 - regional API's from sites like covidwa.com and nycvaccinelist
@@ -13,9 +19,7 @@ This library would intelligently handle calling whichever API is required to pro
 
 
 
-
-
-# Structure
+## Structure
 
 This repo plans to take a modular approach:
 
@@ -28,6 +32,6 @@ This repo plans to take a modular approach:
 
 the main file should be responsible for providing a standard interface of functions to the client and determining which backends to use
 
-# TODO's
-- [ ] create a spec for an API request format that allows requests to be sotred into their respective sources (or sent out to multiple API's)
+## TODO's
+- [ ] create a spec for an API request/response format that allows calls to this library to be sent out to the correct API's
 

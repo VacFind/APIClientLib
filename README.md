@@ -2,10 +2,10 @@
 
 This is an NPM package designed to make it easier to integrate data from various COVID-related API's into your project so you can easily access up-to-date vaccine availability data.
 
-The purpose of this library is to make it easier for us to manage possibly breaking changes that may be made to the API as it grows. This allows us to maintain the client implementation and push this to projects as a package update without requiring developers to soend too much time reading about what changed and why before updating their apps.  
+The purpose of this library is to make it easier for developers to access multiple COVID-related API's and allow the maintainers of those API's to have some control over client implementations. This provides the API developers with the ability to help move projects over to a new versions of their API should they need to make a breaking change. This also helps developers more easily access data from multiple API's and update their implementations just by updating a dependency.  
 
 ## Documentation
-The API is documented at https://docs.vacfind.org should you need to reference it.
+documentation can beseen in the `docs` folder or at https://vacfind.github.io/CovidJS/
 
 ## Installation
 TBD - not yet published as an NPM package. File an issue if this is incorrect
