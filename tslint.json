@@ -46,6 +46,11 @@
 		"object-curly-spacing": [
 			true,
 			"always"
+		],
+		"indent": [
+			true,
+			"tabs",
+			4
 		]
 	},
 	"rulesDirectory": []

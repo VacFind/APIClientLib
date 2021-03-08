@@ -11,9 +11,11 @@ export let loadLinks = async (
   filterOpts: QueryObject
 ): Promise<AirtableRecord[]> => {
   return asyncAirtable
-    .select('links', {
-      sort: [{ field: 'group', direction: 'asc' }],
-      where: filterOpts
-    })
-    .then((results: AirtableRecord[]) => results);
+	.select('links', {
+		sort: [{ field: 'group', direction: 'asc' }],
+		where: filterOpts
+	})
+	.then((results: AirtableRecord[]) => results);
 };
+
+
