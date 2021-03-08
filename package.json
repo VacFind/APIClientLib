@@ -28,6 +28,7 @@
     "lint:fix": "tslint --fix -c tslint.json \"src/**/*.ts\"",
     "build": "webpack --mode development",
     "release": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "test:watch":"jest --watch"
   }
 }
