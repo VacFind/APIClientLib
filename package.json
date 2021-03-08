@@ -21,7 +21,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "asyncairtable": "^2.1.0"
+    "asyncairtable": "^2.2.0-0"
   },
   "scripts": {
     "lint": "tslint -c tslint.json \"src/**/*.ts\"",
@@ -29,6 +29,6 @@
     "build": "webpack --mode development",
     "release": "webpack --mode production",
     "test": "jest",
-    "test:watch":"jest --watch"
+    "test:watch": "jest --watch"
   }
 }

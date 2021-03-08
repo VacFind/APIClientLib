@@ -1,9 +1,10 @@
-import AsyncAirtable from 'asyncairtable';
+import { AsyncAirtable } from 'asyncairtable';
 import { QueryObject, AirtableRecord } from 'asyncairtable/lib/@types';
 
 export const asyncAirtable = new AsyncAirtable(
   'keyyCSADD61J0D4wQ',
-  'appGzEQkD3QySIDvj'
+  'appGzEQkD3QySIDvj',
+  { baseURL: 'https://api.vacfind.org/v0' }
 );
 
 export let loadLinks = async (
