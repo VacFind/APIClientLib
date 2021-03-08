@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "husky": "^4.3.8",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.1",
     "ts-loader": "^8.0.17",
@@ -30,5 +31,11 @@
     "release": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix",
+      "pre-push": "npm run lint:fix"
+    }
   }
 }
