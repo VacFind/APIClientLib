@@ -891,10 +891,10 @@ assign-symbols@^1.0.0:
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
 
-asyncairtable@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/asyncairtable/-/asyncairtable-2.1.0.tgz#76b9e7a29efde1e9c99951f674fcc1e92608bd6f"
-  integrity sha512-NsCs8s+AHlp8AQk4NV2HeFHp6p0wgmjIh9cXV0hGllTMtGqEuv/ahWqVQxqy1swW9eVnliapjwNVQlqz9IAqFA==
+asyncairtable@^2.2.0-0:
+  version "2.2.0-0"
+  resolved "https://registry.yarnpkg.com/asyncairtable/-/asyncairtable-2.2.0-0.tgz#3ec7fe179376082fa8accc52078e86a3659ee576"
+  integrity sha512-hh/NkUunlMvoweNran5wEZ4tHlRVnyuN+jwkYcGDz7tjdODmCA81kCqFEnkEdRugXXSPz291es3EyhiC2zXhlA==
   dependencies:
     node-fetch "^2.6.1"
 
