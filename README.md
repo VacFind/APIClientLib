@@ -7,7 +7,7 @@ The purpose of this library is to make it easier for developers to access multip
 ## Documentation
 documentation can beseen in the `docs` folder or at https://vacfind.github.io/CovidJS/
 
-## Installation
+## Install
 TBD - not yet published as an NPM package. File an issue if this is incorrect
 
 ## Usage
@@ -21,3 +21,11 @@ TBD - not yet published as an NPM package. File an issue if this is incorrect
 </script>
 ```
 
+## Development
+
+To build the CovidJS libary for development purpooses, use the following commands: 
+
+```
+yarn install
+yarn build
+```
