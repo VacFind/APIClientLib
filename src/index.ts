@@ -18,23 +18,3 @@ export let loadLinks = async (
 	.then((results: AirtableRecord[]) => results);
 };
 
-
-export const persistToStorage = (query: Promise<AirtableRecord[]>, storageKey: string) => {
-
-	return query.then((results) => {
-		if (results) {
-			localStorage.setItem(storageKey, JSON.stringify(results));
-		}
-		// pass results through
-		return results
-	})
-}
-
-export const retrieveFromStorage = (storageKey: string, defaultValue: any):AirtableRecord[] => {
-	const storedValue = localStorage.getItem(storageKey);
-	if (storedValue){
-		return JSON.parse(storedValue);
-	} else {
-		return defaultValue;
-	}
-}
