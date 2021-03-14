@@ -12,6 +12,7 @@ TBD - not yet published as an NPM package. File an issue if this is incorrect
 
 ## Usage
 
+### Importing
 ```
 <script src="./path/to/covidjs.bundle.js" ></script>
 

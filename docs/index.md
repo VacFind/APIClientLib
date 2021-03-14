@@ -23,14 +23,20 @@ This library would intelligently handle calling whichever API is required to pro
 
 This repo plans to take a modular approach:
 
-"backends" represent various api's (i.e. each thing listed in the goals section will likely become one or more backends). each backend should be able to:
+"backends" (not yet implemented) represent various api's (i.e. each thing listed in the goals section will likely become one or more backends). each backend should be able to:
 - check whether a  URL will work on it
 - report what kinds of information it can provide (vaccine, testing counts, case count, vaccination sites, site availabilities, etc )
 - interface with the API or backend that it is for
 
-"adapters" are code that adapts different API schemas into one standard common format to interface with the user. These should be two-way adapters so requests can be translated to something that the backend understands (if it doesnt use the standard scraper format (TBD, add link to one here when it exists)) for both requests and responses. datasources pass data through adapters before returning the results of a function call to the client
+"adapters" (not yet implemented) are code that adapts different API schemas into one standard common format to interface with the user. These should be two-way adapters so requests can be translated to something that the backend understands (if it doesnt use the standard scraper format (TBD, add link to one here when it exists)) for both requests and responses. datasources pass data through adapters before returning the results of a function call to the client
 
-the main file should be responsible for providing a standard interface of functions to the client and determining which backends to use
+the main file should be responsible for exporting classes and potentially providing a standard interface or some kind of "registration system" (not yet implemented) where backends can "register" to provide certain pieces of data
+
+
+## Current Usage
+
+This library is currently only being used to interface with the VacFind API to help display a directory of resources on https://vacfind.org.
+
 
 ## TODO's
 - [ ] create a spec for an API request/response format that allows calls to this library to be sent out to the correct API's
