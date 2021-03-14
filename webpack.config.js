@@ -16,6 +16,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
 	mode: "development",
+	devtool: 'inline-source-map',
 	output: {
 		filename: 'covidjs.bundle.js',
 		library: libraryName,
