@@ -4,6 +4,7 @@
     "module": "commonjs",
     "declaration": true,
     "outDir": "build",
+    "sourceMap": true,
     "strict": true,
     "removeComments": true,
     "esModuleInterop": true
