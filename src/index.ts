@@ -19,18 +19,22 @@ export let loadLinks = async (
 };
 
 
-export const persistToStorage = (results: AirtableRecord[]) => {
-	if (results) {
-		localStorage.setItem('vacFind-links', JSON.stringify(results));
-	}
-	return results
+export const persistToStorage = (query: Promise<AirtableRecord[]>, storageKey: string) => {
+
+	return query.then((results) => {
+		if (results) {
+			localStorage.setItem(storageKey, JSON.stringify(results));
+		}
+		// pass results through
+		return results
+	})
 }
 
-export const retrieveFromStorage = ():AirtableRecord[] => {
-	const storedValue = localStorage.getItem('vacFind-links');
+export const retrieveFromStorage = (storageKey: string, defaultValue: any):AirtableRecord[] => {
+	const storedValue = localStorage.getItem(storageKey);
 	if (storedValue){
 		return JSON.parse(storedValue);
 	} else {
-		return [];
+		return defaultValue;
 	}
 }
