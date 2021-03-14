@@ -1,5 +1,6 @@
 import { AsyncAirtable } from 'asyncairtable';
 import { QueryObject, AirtableRecord } from 'asyncairtable/lib/@types';
+import LocalStorage from './storage/localstorage';
 
 export const asyncAirtable = new AsyncAirtable(
   'keyyCSADD61J0D4wQ',
@@ -18,3 +19,4 @@ export let loadLinks = async (
 	.then((results: AirtableRecord[]) => results);
 };
 
+export { LocalStorage }
