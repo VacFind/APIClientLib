@@ -8,18 +8,22 @@ export default class LocalStorage<T> {
 		this.defaultValue = defaultValue;
 	}
 
-	persistToStorage = (query: Promise<T>) => {
+	asyncPersist = (query: Promise<T | T[]>) => {
 
 		return query.then((results) => {
 			if (results) {
-				localStorage.setItem(this.storageKey, JSON.stringify(results));
+				this.persist(results)
 			}
-			// pass results through
+			// pass results through to another possible async call
 			return results
 		})
 	}
 
-	retrieveFromStorage = (): T | T[] => {
+	persist = (data:T | T[]) => {
+		localStorage.setItem(this.storageKey, JSON.stringify(data));
+	}
+
+	retrieve = (): T | T[] => {
 		const storedValue = localStorage.getItem(this.storageKey);
 		if (storedValue) {
 			return JSON.parse(storedValue) as T | T[];
